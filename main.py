@@ -30,7 +30,7 @@ import string
 from console import Console
 
 console = Console()
-
+promo_mail = console.input("Enter Mail To Recieve Promos :")
 class Sign:
     def __init__(self) -> None:
         self.sign_key = b"gUtPzJFZch4ZyAGviiyH94P99lQ3pFdRTwpJWDlSGFfwgpr6ses5ALOxWHOIT7R1"
@@ -252,7 +252,7 @@ class Claim:
         url = "https://m.webtoons.com/app/promotion/saveSubmitPayload"
         data = {
             "eventNo": 5362,
-            "email": "" #add ur own mail here
+            "email": promo_mail #add ur own mail here
         }
         r = self.session.post(url,json=data, timeout=15)
         #print(r.text)
