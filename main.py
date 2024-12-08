@@ -15,7 +15,6 @@ from colorama             import Fore, init
 from secrets              import token_urlsafe
 from os                   import system
 from sys                  import exit
-from yaml                 import safe_load
 from multiprocessing      import freeze_support
 from requests import Session
 import imaplib
